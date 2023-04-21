@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hide Blue Checks on Twitter - Options</title>
+    <script src="options.js"></script>
+    <style>
+      body {
+        width: 250px;
+        height: 150px;
+        margin: 0;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      #hideTweetsOption {
+        display: block;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    Refresh for changes to take effect
+    <label>
+      <input type="checkbox" id="hideBlueChecks" />
+      Hide blue checks
+    </label>
+    <label>
+      Hide tweets with blue checks
+      <select id="hideTweetsOption">
+        <option value="always">Always</option>
+        <option value="forYou">On "For you" tab</option>
+        <option value="never">Never</option>
+      </select>
+    </label>
+  </body>
+</html>
