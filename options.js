@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   chrome.storage.sync.get(["hideBlueChecks", "hideTweetsOption"], (data) => {
     hideBlueChecksCheckbox.checked = data.hideBlueChecks ?? true;
-    hideTweetsOption.value = data.hideTweetsOption ?? "forYou";
+    hideTweetsOption.value = data.hideTweetsOption ?? "never";
   });
 
   hideBlueChecksCheckbox.addEventListener("change", () => {

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Hide Blue Checks on Twitter",
   "version": "1.0",
-  "description": "A Chrome extension to hide blue checks and/or tweets with blue checks on Twitter",
+  "description": "Hide blue checks and/or tweets with blue checks on Twitter",
   "permissions": ["scripting", "storage"],
   "action": {
     "default_popup": "options.html"
@@ -13,5 +13,8 @@
       "matches": ["https://twitter.com/*"],
       "js": ["contentScript.js"]
     }
-  ]
+  ],
+  "icons": {
+    "128": "icon128.png"
+  }
 }
